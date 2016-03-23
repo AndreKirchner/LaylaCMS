@@ -1,0 +1,9 @@
+/* Mixins */
+@mixin section-color($color) {
+  h1, 
+  h2, 
+  .arrow-left, 
+  .arrow-right  {
+    color: $color;
+  }
+}

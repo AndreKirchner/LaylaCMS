@@ -1,0 +1,13 @@
+<div class="mod_flexslider">
+	<flex-slider slide="tab in element.content track by $index">
+		<li>
+			<div ng-repeat="tabcontent in tab.content" class="tabcontent">
+				<h1  ng-if="tabcontent.meta.type==='h1'"   ng-class="([tabcontent.meta.name, tabcontent.meta.class].join(' '))" ng-bind-html="tabcontent.content"></h1>
+				<h2  ng-if="tabcontent.meta.type==='h2'"   ng-class="([tabcontent.meta.name, tabcontent.meta.class].join(' '))" ng-bind-html="tabcontent.content"></h2>
+				<h3  ng-if="tabcontent.meta.type==='h3'"   ng-class="([tabcontent.meta.name, tabcontent.meta.class].join(' '))" ng-bind-html="tabcontent.content"></h3>
+				<p   ng-if="tabcontent.meta.type==='p'"    ng-class="([tabcontent.meta.name, tabcontent.meta.class].join(' '))" ng-bind-html="tabcontent.content"></p>
+				<div ng-if="tabcontent.meta.type==='html'" ng-class="([tabcontent.meta.name, tabcontent.meta.class].join(' '))" ng-bind-html="tabcontent.content"></div>
+			</div>
+		</li>
+	</flex-slider>
+</div>

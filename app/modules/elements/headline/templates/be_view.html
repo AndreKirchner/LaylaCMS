@@ -1,0 +1,38 @@
+<div class="mod_headline">
+	<div class="col-lg-9">
+		<label>{{ 'MODULES_FIELDS_HEADLINE' | translate }}</label>
+		<input type="text" name="headline" data-ng-model="element.content">
+	</div>
+	<div class="col-lg-3">
+		<label>{{ 'MODULES_FIELDS_HTYPE' | translate }}</label>
+		<select name="headline" data-ng-model="element.meta.htype">
+			<option>H1</option>
+			<option>H2</option>
+			<option>H3</option>
+			<option>H4</option>
+		</select>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<div class="clearfix"></div>
+
+<!-- Meta Information -->
+<div class="meta hide">
+	<div class="col-lg-3">
+		<label>{{ 'MODULES_FIELDS_CSSID' | translate }}</label>
+		<input type="text" name="id" data-ng-model="element.meta.id">
+	</div>
+	<div class="col-lg-3">
+		<label>{{ 'MODULES_FIELDS_CSSCLASS' | translate }}</label>
+		<input type="text" name="class" data-ng-model="element.meta.class">
+	</div>
+	<div class="clearfix"></div>
+	<div class="col-lg-3">
+		<label>{{ 'MODULES_FIELDS_AUTHOR' | translate }}</label>
+		<input type="text" name="author" data-ng-model="element.meta.author">
+	</div>
+	<div class="col-lg-3">
+		<label>{{ 'MODULES_FIELDS_COPYRIGHT' | translate }}</label>
+		<input type="text" name="copyright" data-ng-model="element.meta.copyright">
+	</div>
+</div>

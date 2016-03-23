@@ -1,0 +1,47 @@
+& {
+    width: 350px;
+    margin: 50px auto;
+    overflow: hidden;
+    .inside {
+        padding: 20px;
+        background: $color-white;
+        border-radius: 4px;
+        border: 1px solid $color-grey;
+        input,
+        select {
+            height: 25px;
+            width: 100%;
+            color: black;
+            margin: 0 0 5px 0;
+            border: 1px solid $color-grey;
+            border-radius: 3px;
+            padding: 1px 4px;
+            transition: all 0.4s;
+            &:focus {
+                border: 1px solid orange;
+                background: papayawhip;
+            }
+        }
+        textarea {
+            width: 100%;
+            color: $color-black;
+            margin: 0 0 5px 0;
+            border: 1px solid $color-grey;
+            border-radius: 3px;
+            padding: 1px 4px;
+            transition: all 0.4s;
+            &:focus {
+                border: 1px solid orange;
+                background: papayawhip;
+            }
+        }
+        .btn-primary {
+            width: 100%;
+        }
+    }
+    .copyright {
+        margin-top: 10px;
+        text-align: center;
+        color: $color-midgrey;
+    }
+}

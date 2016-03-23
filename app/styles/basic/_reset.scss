@@ -1,0 +1,16 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: $color-lightgrey;
+}
+
+.header,
+.main,
+.footer {
+    border: 0;
+}

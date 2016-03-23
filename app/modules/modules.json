@@ -1,0 +1,28 @@
+{
+	"modules" : [
+		{
+			"name"    	 : "navigation",
+			"text"    	 : "MODULES_FIELDS_NAVIGATION",
+			"beView"  	 : "be_view.html",
+			"feView"  	 : "fe_view.html"
+		},
+		{
+			"name"    	 : "text",
+			"text"    	 : "MODULES_FIELDS_TEXT",
+			"beView"  	 : "be_view.html",
+			"feView"  	 : "fe_view.html"
+		},
+		{
+			"name"      : "image",
+			"text"       : "MODULES_FIELDS_IMAGE",
+			"beView"     : "be_view.html",
+			"feView"     : "fe_view.html"
+		},
+		{
+			"name"    	 : "headline",
+			"text"     	 : "MODULES_FIELDS_HEADLINE",
+			"beView"  	 : "be_view.html",
+			"feView"  	 : "fe_view.html"
+		}
+	]
+}

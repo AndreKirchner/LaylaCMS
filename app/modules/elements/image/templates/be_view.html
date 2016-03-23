@@ -1,0 +1,63 @@
+<script src="modules/elements/image/controller/element-image.js"></script>
+
+<div class="mod_image col-lg-12" data-ng-controller="ElementImageCtrl">
+	<label>{{ 'MODULES_FIELDS_IMAGE' | translate }}</label>
+	<p class="error" data-ng-if="!fileList.length">{{ 'MODULES_FIELDS_IMAGE_EMPTYLIST' | translate }}</p>
+	<select data-ng-if="fileList.length" data-ng-model="element.file" data-ng-options="file.url as file.name for file in fileList" ng-focus="switchElement($event)" ng-change="this.focus()"></select>
+
+	<label>{{ 'MODULES_FIELDS_IMAGE_UPLOAD' | translate }}</label><br>
+	<div ng-file-drop ng-file-select ng-model="files" class="drop-box" drag-over-class="dragover" ng-multiple="false" allow-dir="false" accept="*">{{ 'MODULES_FIELDS_IMAGE_UPLOADINFO' | translate }}</div>
+
+	<div ng-if="element.file" class="image-preview">
+		<img ng-src="{{ element.file }}"/>
+	</div>
+
+	<div data-ng-if="uploadRunning" class="upload-progress">{{ uploadProgress }}</div>
+	<div data-ng-if="uploadSuccess" class="darkgreen">{{ 'MODULES_FIELDS_IMAGE_UPLOADSUCCESS' | translate }}</div>
+</div>
+<div class="clearfix"></div>
+
+<!-- Meta Information -->
+<div class="meta hide clearfix">
+	<div class="col-lg-3">
+		<label>{{ 'MODULES_FIELDS_IMAGE_WIDTH' | translate }}</label>
+		<input type="text" name="id" data-ng-model="element.meta.width">
+	</div>
+	<div class="col-lg-3">
+		<label>{{ 'MODULES_FIELDS_IMAGE_HEIGHT' | translate }}</label>
+		<input type="text" name="class" data-ng-model="element.meta.height">
+	</div>
+	<div class="col-lg-3">
+		<label>{{ 'MODULES_FIELDS_IMAGE_CROPALGO' | translate }}</label>
+		<select name="cropalgo" data-ng-model="element.meta.cropalgo">
+			<option key="full | auto">full | auto</option>
+			<option key="auto | full">auto | full</option>
+			<option key="left | top">left | top</option>
+			<option key="left | center">left | center</option>
+			<option key="left | bottom">left | bottom</option>
+			<option key="center | top">center | top</option>
+			<option key="center | center">center | center</option>
+			<option key="center | bottom">center | bottom</option>
+			<option key="right | top">right | top</option>
+			<option key="right | center">right | center</option>
+			<option key="right | bottom">right | bottom</option>
+		</select>
+	</div>
+	<div class="clearfix"></div>
+	<div class="col-lg-3">
+		<label>{{ 'MODULES_FIELDS_CSSID' | translate }}</label>
+		<input type="text" name="id" data-ng-model="element.meta.id">
+	</div>
+	<div class="col-lg-3">
+		<label>{{ 'MODULES_FIELDS_CSSCLASS' | translate }}</label>
+		<input type="text" name="class" data-ng-model="element.meta.class">
+	</div>
+	<div class="col-lg-3">
+		<label>{{ 'MODULES_FIELDS_AUTHOR' | translate }}</label>
+		<input type="text" name="author" data-ng-model="element.meta.author">
+	</div>
+	<div class="col-lg-3">
+		<label>{{ 'MODULES_FIELDS_COPYRIGHT' | translate }}</label>
+		<input type="text" name="copyright" data-ng-model="element.meta.copyright">
+	</div>
+</div>

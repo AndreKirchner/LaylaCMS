@@ -1,0 +1,14 @@
+<style>
+{{ globalSettings.css }}
+</style>
+
+<div class="mod_frontend">
+
+	<div ng-repeat="area in contentMain" class="area" ng-class="([area.meta.name, area.meta.class].join(' '))">
+		<div ng-repeat="section in area.content" id="{{ section.meta.id }}" class="section" ng-class="([section.meta.name, section.meta.class].join(' '))">
+			<div ng-repeat="element in section.content" class="element">
+				<div class="element-editor" ng-include="pathList[element.meta.type]">{{ 'BACKEND_EDITOR' | translate }}</div>
+			</div>
+		</div>
+	</div>
+</div>

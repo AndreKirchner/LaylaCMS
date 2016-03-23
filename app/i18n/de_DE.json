@@ -1,0 +1,14 @@
+{
+	"BACKEND_SAVE"              			: "Speichern",
+	"BACKEND_SAVE_CONFIRM"      			: "Die Änderungen wurden gespeichert",
+	"BACKEND_EDITOR"            			: "Editor",
+	"BACKEND_ELEMENT_TYPE"					: "Element-Typ",
+	"BACKEND_ELEMENT_OPEN_META"				: "Element Meta-Info anzeigen",
+	"BACKEND_SECTION_NAME"					: "Section Name",
+	"BACKEND_SECTION_CSSID"				    : "Ankername / ID",
+	"BACKEND_SECTION_CSSCLASS"			    : "CSS-Klasse",
+	"BACKEND_SECTION_ANCHOR"				: "Ankername",
+	"BACKEND_SECTION_OPEN_META"				: "Section Meta-Info anzeigen",
+	"BACKEND_GLOBAL_CSS"				    : "CSS-Einstellungen",
+	"BACKEND_GLOBAL_SHOWNAV"				: "Zeige Navigation im Frontend"
+}

@@ -1,0 +1,10 @@
+<script src="modules/elements/navigation/controller/element-navigation.js"></script>
+
+<div class="mod_navigation" data-ng-controller="ElementNavigationCtrl">
+	<ul>
+		<li data-ng-repeat="section in contentMain[1].content" data-ng-if="section.meta.id && section.meta.name">
+			<span class="navigation-link" data-ng-click="scrollTo(section.meta.id)">{{ section.meta.name }}</span>
+		</li>
+	</ul>
+	<div class="clearfix"></div>
+</div>

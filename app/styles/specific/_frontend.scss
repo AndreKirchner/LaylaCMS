@@ -1,0 +1,59 @@
+/* Major Architecture */
+& {
+    overflow: hidden;
+    .header,
+    .footer {
+        padding: 0;
+        margin: 0;
+    }
+    .section:nth-child(odd) {
+        background-color: #EFEFEE;
+    }
+    .section {
+        min-height: 300px;
+        height: auto !important;
+        height: 300px;
+        text-align: center;
+        *zoom: 1;
+        &:before,
+        &:after {
+            display: table;
+            content: "";
+            // Fixes Opera/contenteditable bug:
+            // http://nicolasgallagher.com/micro-clearfix-hack/#comment-36952
+            line-height: 0;
+        }
+        &:after {
+            clear: both;
+        }
+    }
+    /* Sections */
+    .section-white {
+        @include section-color($color-white);
+    }
+    .section-turquoise {
+        @include section-color($color-turquoise);
+    }
+    .section-magenta {
+        @include section-color($color-magenta);
+    }
+    .section-grassgreen {
+        @include section-color($color-grassgreen);
+    }
+    .section-woodgreen {
+        @include section-color($color-woodgreen);
+    }
+    /* Colors */
+    .clr-normal {
+        color: $color-text;
+    }
+    .clr-white {
+        color: $color-white;
+    }
+    /* Backgrounds */
+    .section {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+}

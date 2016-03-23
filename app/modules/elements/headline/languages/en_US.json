@@ -1,0 +1,9 @@
+{
+	"MODULES_FIELDS_CSSID" 					: "CSS ID",
+	"MODULES_FIELDS_CSSCLASS" 				: "CSS Class",
+	"MODULES_FIELDS_CUSTOMCSS" 				: "Custom CSS",
+	"MODULES_FIELDS_AUTHOR" 				: "Author",
+	"MODULES_FIELDS_COPYRIGHT" 				: "Copyright",
+	"MODULES_FIELDS_HEADLINE"   			: "Headline",
+	"MODULES_FIELDS_HTYPE" 					: "Headline type"
+}

@@ -1,0 +1,22 @@
+/* Reference to basic SCSS Files */
+@import "basic/_bootstrap";
+@import "basic/_variables";
+@import "basic/_reset";
+@import "basic/_mixins";
+@import "basic/_margins";
+@import "basic/_paddings";
+@import "basic/_colors";
+@import "basic/_messages";
+
+/* Reference to specific SCSS Files */
+.mod_frontend {
+    @import "specific/_frontend";
+}
+
+.mod_backend {
+    @import "specific/_backend";
+}
+
+.mod_login {
+    @import "specific/_login";
+}

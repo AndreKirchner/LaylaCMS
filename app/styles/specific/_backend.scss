@@ -1,0 +1,203 @@
+/* Backend */
+
+& {
+    padding: 20px;
+    color: $color-text;
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    /* Architecture */
+    .backend-header,
+    .backend-main,
+    .backend-footer {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+    .global-settings {
+        .global-css {
+            textarea {
+                height: 4em;
+                font-family: 'Lucida Console';
+                font-size: 0.8em;
+                overflow: hidden;
+                transition: height 0.3s;
+                &:focus {
+                    height: 20em;
+                    overflow: auto;
+                }
+            }
+        }
+    }
+    .add {
+        width: 200px;
+    }
+    .section {
+        margin: 0 auto 20px auto;
+        overflow: hidden;
+    }
+    .section-content {
+        padding: 10px;
+        border-radius: 10px;
+        background: #fbfbfb;
+        border: 1px solid #ddd;
+    }
+    .meta-section {
+        margin: 0 0 15px 0;
+        border-radius: 3px;
+        border: 1px solid #ddd;
+        padding: 20px 0;
+        overflow: hidden;
+        height: auto;
+        background: whitesmoke;
+        transition: height 2s;
+    }
+    .element-content {
+        margin: 0 0 15px 0;
+        border-radius: 3px;
+        border: 1px solid #ddd;
+        padding-left: 0;
+        padding-right: 0;
+        overflow: hidden;
+        height: auto;
+        transition: height 2s;
+        .header {
+            background: lightblue;
+            margin: 0px;
+            transition: height 2s;
+            padding: 20px 0;
+        }
+        .body {
+            background: whitesmoke;
+            margin: 0px;
+            transition: height 2s;
+            padding: 20px 0;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .element-controls {
+        overflow: hidden;
+        margin: 0px;
+        transition: height 2s;
+        padding: 0 0 20px 10px;
+        > div {
+            display: inline-block;
+            cursor: pointer;
+            padding: 2px;
+            border-radius: 3px;
+        }
+    }
+    .section-controls {
+        margin: 10px 0 0 0;
+        overflow: hidden;
+        transition: height 2s;
+        padding: 0 0 20px 10px;
+        > div {
+            display: inline-block;
+            cursor: pointer;
+            padding: 2px;
+            border-radius: 3px;
+        }
+    }
+    input,
+    select {
+        height: 25px;
+        width: 100%;
+        color: black;
+        margin: 0 0 5px 0;
+        border: 1px solid #DDD;
+        border-radius: 3px;
+        padding: 1px 4px;
+        transition: all 0.4s;
+        &:focus {
+            border: 1px solid orange;
+            background: papayawhip;
+        }
+    }
+    textarea {
+        width: 100%;
+        color: black;
+        margin: 0 0 5px 0;
+        border: 1px solid #DDD;
+        border-radius: 3px;
+        padding: 1px 4px;
+        transition: all 0.4s;
+        &:focus {
+            border: 1px solid orange;
+            background: papayawhip;
+        }
+    }
+    label {
+        margin: 0;
+        font-weight: normal;
+        font-size: 80%;
+    }
+    input[type='checkbox'] {
+        display: inline-block;
+        vertical-align: top;
+        width: auto;
+        margin-right: 5px;
+    }
+    .metatoggler {
+        cursor: pointer;
+    }
+    .meta {
+        margin-top: 20px;
+        &.hide {
+            display: none;
+        }
+    }
+    .info-save {
+        opacity: 0;
+    }
+    .backend-main {
+        padding-bottom: 100px;
+    }
+    .backend-footer {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: lightblue;
+        padding: 20px;
+        border-top: 1px solid #ddd;
+    }
+    .minieditor-content {
+        margin-top: 10px;
+        height: 150px !important;
+        width: auto !important;
+    }
+    .drop-box {
+        background: #F8F8F8;
+        border: 3px dashed #DDD;
+        width: 200px;
+        height: 130px;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        display: inline-block;
+    }
+    .image-preview {
+        display: inline-block;
+        background: #F8F8F8;
+        border: 3px dashed #DDD;
+        width: 200px;
+        height: 130px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .dragover {
+        border: 5px dashed blue;
+    }
+}

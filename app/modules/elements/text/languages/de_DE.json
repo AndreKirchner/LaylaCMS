@@ -1,0 +1,8 @@
+{
+	"MODULES_FIELDS_CSSID" 					: "Element-ID",
+	"MODULES_FIELDS_CSSCLASS" 				: "CSS-Klasse",
+	"MODULES_FIELDS_CUSTOMCSS" 				: "Eigenes CSS",
+	"MODULES_FIELDS_AUTHOR" 				: "Autor",
+	"MODULES_FIELDS_COPYRIGHT" 				: "Copyright",
+	"MODULES_FIELDS_TEXT" 					: "Text"
+}

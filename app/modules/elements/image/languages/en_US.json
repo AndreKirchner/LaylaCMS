@@ -1,0 +1,15 @@
+{
+	"MODULES_FIELDS_CSSID" 					: "CSS ID",
+	"MODULES_FIELDS_CSSCLASS" 				: "CSS Class",
+	"MODULES_FIELDS_CUSTOMCSS" 				: "Custom CSS",
+	"MODULES_FIELDS_AUTHOR" 				: "Author",
+	"MODULES_FIELDS_COPYRIGHT" 				: "Copyright",
+	"MODULES_FIELDS_IMAGE" 					: "Image",
+	"MODULES_FIELDS_IMAGE_UPLOAD"     		: "Image Upload",
+	"MODULES_FIELDS_IMAGE_UPLOADINFO" 		: "Drop image file here!",
+	"MODULES_FIELDS_IMAGE_UPLOADSUCCESS"  	: "Upload successfull!",
+	"MODULES_FIELDS_IMAGE_EMPTYLIST"		: "No images found!",
+	"MODULES_FIELDS_IMAGE_WIDTH"			: "Image width (px)",
+	"MODULES_FIELDS_IMAGE_HEIGHT"			: "Image height (px)",
+	"MODULES_FIELDS_IMAGE_CROPALGO"         : "Cropping algorithm"
+}

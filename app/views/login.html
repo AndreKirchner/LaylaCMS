@@ -1,0 +1,27 @@
+<div class="mod_login">
+	<div class="inside">
+		<!-- Logo -->
+		<div class="text-center">
+			<img src="images/system/layla.png">
+		</div>
+
+		<!-- Error messages -->
+		<div data-ng-if="login.error" class="error">
+			<p>Please recheck your login data</p>
+		</div>
+
+		<!-- Login Form -->
+		<label>Username</label>
+		<input type="text" data-ng-model="login.username">
+
+		<br>
+
+		<label>Password</label>
+		<input type="password" data-ng-model="login.password">
+
+		<button class="btn btn-primary" data-ng-click="login()">Login</button>
+	</div>
+	<div class="copyright">
+		Copyright &copy; 2014 - André Kirchner
+	</div>
+</div>

@@ -1,0 +1,106 @@
+<div class="mod_backend">
+	<div class="backend-header text-center">
+		<!--<img src="images/system/layla.png">-->
+	</div>
+
+	<div class="backend-main">
+
+		<!-- Page Meta -->
+		<div class="page global-settings">
+
+			<div class="global-css">
+				<label>{{ 'BACKEND_GLOBAL_CSS' | translate }}</label>
+				<textarea data-ng-model="globalSettings.css"></textarea>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+
+		<!-- Page Content -->
+		<div ng-repeat="area in contentMain" class="area" ng-class="([area.meta.name, area.meta.class].join(' '))">
+			<div ng-repeat="section in area.content" class="section" ng-class="([section.meta.name, section.meta.class].join(' '))">
+
+				<!-- Section Content -->
+				<div class="section-content col-lg-10">
+
+					<!-- Section Header -->
+					<div class="section-header marg-lg-b30">
+						<div class="col-lg-6 pad-0">
+							<h4 data-ng-if="section.meta.name" class="marg-0">{{ section.meta.name }}</h4>
+							<h4 data-ng-if="!section.meta.name" class="marg-0">Section {{ ($index+1) }}</h4>
+						</div>
+						<div class="metatoggler col-lg-6 text-right" data-ng-click="openSectionMetaInfo($event)">
+							<i class="glyphicon glyphicon-edit"></i> {{ 'BACKEND_SECTION_OPEN_META' | translate }}
+						</div>
+						<div class="clearfix"></div>
+					</div>
+
+					<!-- Meta Information -->
+					<div class="meta-section hide clearfix">
+						<div class="col-lg-3">
+							<label>{{ 'BACKEND_SECTION_NAME' | translate }}</label>
+							<input type="text" name="name" data-ng-model="section.meta.name">
+						</div>
+						<div class="col-lg-3">
+							<label>{{ 'BACKEND_SECTION_CSSID' | translate }}</label>
+							<input type="text" name="id" data-ng-model="section.meta.id">
+						</div>
+						<div class="col-lg-3">
+							<label>{{ 'BACKEND_SECTION_CSSCLASS' | translate }}</label>
+							<input type="text" name="class" data-ng-model="section.meta.class">
+						</div>
+					</div>
+
+					<!-- Section Content -->
+					<div ng-repeat="element in section.content" class="element">
+						<!-- Element Content -->
+						<div class="element-content col-lg-10">
+							<div class="header">
+								<div class="type col-lg-6">
+								<label>{{ 'BACKEND_ELEMENT_TYPE' | translate }}</label>
+								<select data-ng-model="element.meta.type" data-ng-options="elType.name as elType.text | translate for elType in elementTypes" ng-focus="switchElement($event)" ng-change="this.focus()"></select>
+								</div>
+								<div class="metatoggler col-lg-6 text-right" data-ng-click="openElementMetaInfo($event)">
+									<i class="glyphicon glyphicon-edit"></i> {{ 'BACKEND_ELEMENT_OPEN_META' | translate }}
+								</div>
+								<div class="clearfix"></div>
+							</div>
+
+							<div class="body">
+								<div class="element-editor" ng-include="pathList[element.meta.type]">{{ 'BACKEND_EDITOR' | translate }}</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+
+						<!-- Element Controls -->
+						<div class="element-controls col-lg-2">
+							<div class="control" ng-click="editElement('moveUp', $event)"><i class="glyphicon glyphicon-arrow-up green"></i></div>
+							<div class="control" ng-click="editElement('moveDown', $event)"><i class="glyphicon glyphicon-arrow-down green"></i></div>
+							<div class="control" ng-click="editElement('add', $event)"><i class="glyphicon glyphicon-plus green"></i></div>
+							<div class="control" ng-click="editElement('remove', $event)"><i class="glyphicon glyphicon-remove red"></i></div>
+						</div>
+
+						<div class="clearfix"></div>
+
+					</div>
+				</div>
+
+				<!-- Section Controls -->
+				<div class="section-controls col-lg-2">
+					<div class="control" ng-click="editSection('moveUp', $event)"><i class="glyphicon glyphicon-arrow-up green"></i></div>
+					<div class="control" ng-click="editSection('moveDown', $event)"><i class="glyphicon glyphicon-arrow-down green"></i></div>
+					<div class="control" ng-click="editSection('add', $event)"><i class="glyphicon glyphicon-plus green"></i></div>
+					<div class="control" ng-click="editSection('remove', $event)"><i class="glyphicon glyphicon-remove red"></i></div>
+				</div>
+
+				<div class="clearfix"></div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<div class="backend-footer">
+		<div class="info info-save darkgreen marg-d-b10">{{ 'BACKEND_SAVE_CONFIRM' | translate }}</div>
+		<div class="btn btn-primary add add-section" data-ng-click="save()"><i class="glyphicon glyphicon-ok green"></i> {{ 'BACKEND_SAVE' | translate }}</div>
+	</div>
+</div>

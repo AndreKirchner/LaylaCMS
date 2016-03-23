@@ -1,0 +1,26 @@
+<div class="mod_text col-lg-12">
+	<label>{{ 'MODULES_FIELDS_TEXT' | translate }}</label>
+	<minieditor data-ng-model="element.content" options="options"></minieditor>
+</div>
+<div class="clearfix"></div>
+
+<!-- Meta Information -->
+<div class="meta hide">
+	<div class="col-lg-3">
+		<label>{{ 'MODULES_FIELDS_CSSID' | translate }}</label>
+		<input type="text" name="id" data-ng-model="element.meta.id">
+	</div>
+	<div class="col-lg-3">
+		<label>{{ 'MODULES_FIELDS_CSSCLASS' | translate }}</label>
+		<input type="text" name="class" data-ng-model="element.meta.class">
+	</div>
+	<div class="clearfix"></div>
+	<div class="col-lg-3">
+		<label>{{ 'MODULES_FIELDS_AUTHOR' | translate }}</label>
+		<input type="text" name="author" data-ng-model="element.meta.author">
+	</div>
+	<div class="col-lg-3">
+		<label>{{ 'MODULES_FIELDS_COPYRIGHT' | translate }}</label>
+		<input type="text" name="copyright" data-ng-model="element.meta.copyright">
+	</div>
+</div>

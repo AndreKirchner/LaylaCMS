@@ -1,0 +1,6 @@
+<div class="mod_headline" data-ng-class="([element.meta.name, element.meta.class].join(' '))">
+	<h1 ng-if="element.meta.htype==='H1'" data-ng-bind-html="element.content"></h1>
+	<h2 ng-if="element.meta.htype==='H2'" data-ng-bind-html="element.content"></h2>
+	<h3 ng-if="element.meta.htype==='H3'" data-ng-bind-html="element.content"></h3>
+	<h4 ng-if="element.meta.htype==='H4'" data-ng-bind-html="element.content"></h4>
+</div>

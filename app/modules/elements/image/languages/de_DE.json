@@ -1,0 +1,15 @@
+{
+	"MODULES_FIELDS_CSSID" 					: "Element-ID",
+	"MODULES_FIELDS_CSSCLASS" 				: "CSS-Klasse",
+	"MODULES_FIELDS_CUSTOMCSS" 				: "Eigenes CSS",
+	"MODULES_FIELDS_AUTHOR" 				: "Autor",
+	"MODULES_FIELDS_COPYRIGHT" 				: "Copyright",
+	"MODULES_FIELDS_IMAGE" 					: "Bild",
+	"MODULES_FIELDS_IMAGE_UPLOAD"     		: "Datei Upload",
+	"MODULES_FIELDS_IMAGE_UPLOADINFO" 		: "Bild Datei hier ablegen",
+	"MODULES_FIELDS_IMAGE_UPLOADSUCCESS"  	: "Upload erfolgreich!",
+	"MODULES_FIELDS_IMAGE_EMPTYLIST"		: "Keine Bilder gefunden",
+	"MODULES_FIELDS_IMAGE_WIDTH"			: "Bildweite (px)",
+	"MODULES_FIELDS_IMAGE_HEIGHT"			: "Bildhöhe (px)",
+	"MODULES_FIELDS_IMAGE_CROPALGO"         : "Zuschneide-Algorithmus"
+}
